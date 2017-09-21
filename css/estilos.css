@@ -1,0 +1,354 @@
+/*MENU*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {background:#FEFEFE;}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	background:#023859;
+	z-index:5000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+ 
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	background:#E6344A;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	padding: 25px;
+
+}
+header nav ul li a span {
+	margin-right:10px;
+}
+ 
+header nav ul li:hover .children {
+	display:block;
+}
+ 
+header nav ul li .children {
+	display: none;
+	background:#011826;
+	position: absolute;
+	width: 150%;
+	z-index:2000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+ 
+header nav ul li .children li a {
+	display: block;
+}
+ 
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+ 
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#E6344A;
+		z-index: 4000;
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+ 
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+		display: block;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}
+
+body{
+	font-family: 'Gochi Hand', cursive;
+	font-size: 16px;
+	background:radial-gradient(circle, #1162ac,black);
+	/*background-color: #1390c6;*/
+	color: white;
+}
+
+
+/****************SLIDER****************/
+figure#InicioAncho{
+	position: relative;
+	width: 100%;
+	display: none;
+	border: 1px solid transparent;
+}
+figure#InicioAncho #slider{
+	border-radius: 10px;
+	border: 2px solid #00ff0c;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	min-height: 550px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 95%;
+}
+figure#InicioAncho #slider figure.elemento{
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%
+	height: 100%;
+}
+figure.elemento{
+	margin: 0px 0px 0px 0px;
+}
+figure#InicioAncho #slider img{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+figure#InicioAncho #slider a{
+	text-decoration: none;
+}
+figure#InicioAncho #slider p.gancho{
+	color: #2A0586;
+	display: block;
+	font-size: 1.4em;
+	font-weight: bolder;
+	line-height: 25px;
+	position: absolute;
+	right: 1%;
+	text-shadow: 2px 2px 3px white,-2px 2px 3px white,2px -2px 3px white,-2px -2px 3px white;
+	top: 5%;
+	width: 50%;
+	text-align: right;
+}
+section{
+	margin-bottom: 75px;
+}
+section#uno{
+	background: url(../imgs/fondofrutas.jpg);
+}
+section#dos{
+	background: url(../imgs/fondofrutas2.jpg);
+}
+section#tres{
+	background: url(../imgs/fondofrutas3.jpg);
+}
+section#cuatro{
+	background: url(../imgs/fondofrutas4.jpg);
+}
+section#quinto{
+	background: url(../imgs/fondofrutas5.jpg);
+}
+section#sexto{
+	background: url(../imgs/fondofrutas6.jpg);
+}
+section#septimo{
+	background: url(../imgs/fondofrutas7.jpg);
+}
+
+section article.fruta{
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	border-radius: 0px 0px 15px 15px;
+	margin: 50px 0px 20px 10%;
+	width: 45%;
+	font-size: 1.2em;
+	background: rgba(255, 255, 0, 0.51);
+
+}
+section article.fruta figure{
+	float: left;
+	margin-top: -50px;
+	margin-left: -30px;
+
+}
+section article.fruta figure img{
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: solid;
+	width: 180px;
+	height: 180px;
+}
+section article.fruta span.tipo{
+	position: absolute;
+	border-radius: 15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 2px;
+	height: 30px;
+	line-height: 30px;
+	padding: 2px 10px;
+	right: -2px;
+	top: -39px;
+	width: 33%; /* antes con el valor de 150px;*/
+	text-align: center;
+	background: red;
+}
+
+h1{
+	text-align: center;
+	font-size: 40px;
+	color: red;
+}
+
+h1:hover{
+	background: yellow;
+	font-size: 60px;
+}
+
+iframe{
+ 	position: relative;
+ 	float: right;
+	border-radius: 10px;
+	border-bottom: 2px solid black;
+	margin-right: 45px;
+	margin-top: 45px;
+	height: 80%
+}	
+
+
+span.tipo{
+	background: red;
+}
+
+p.info{
+	/*background: yellow;*/
+	color: brown;
+
+}
+
+h2{
+	background: green;
+}
+
+a.logo{
+	background: green;
+	font-size: 30px;
+	color: yellow;
+
+}
+
+@media screen and (min-width: 767px){
+	figure#InicioAncho{
+		display:inline;
+		max-width: 1000;
+	}
+	
+}
+
+@media screen and (max-width: 320px){
+	header{
+		border: #0af8f0 3px solid;
+	}
+
+}
+@media  screen and (max-width: 767px) {
+	iframe{
+		display: none;
+	}
+	a.logo{
+		text-align: center;
+	}
+	figure#InicioAncho{
+		display: none;
+		
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	
+}
