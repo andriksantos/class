@@ -1,3 +1,0 @@
-<audio src="imgs/Tap_sap.mp3" Type="audio/mp3" preload "auto" autoplay="autoplay" controls="controls" loop></audio>
-	<video src="imgs/Video_Smoothie.mp4" type="video/mp4" preload="autoplay" controls="controls" width="420" height="340"></video>
-	<iframe width="640" height="360" src="https://www.youtube.com/embed/N9TTN5smxcs?ecver=1" frameborder="0" allowfullscreen></iframe>
